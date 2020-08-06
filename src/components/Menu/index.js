@@ -2,7 +2,6 @@ import React from 'react';
 import './Menu.scss';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/logo/logo_DougFlix.png';
-import ButtonLink from './components/ButtonLink';
 import Button from '../Button';
 
 const Menu = () => {
