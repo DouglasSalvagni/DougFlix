@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 const Button = styled.button`
     color: var(--white);
     border: 1px solid var(--white);
@@ -17,10 +16,24 @@ const Button = styled.button`
     display: inline-block;
     transition: opacity .3s;
 
-    &:hover,
+    &:hover{
+        opacity: .5;
+    };
+
     &:ButtonLink:focus {
         opacity: .5;
     }
+
+    @media (max-width: 800px) {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--primary);
+        border-radius: 0;
+        border: 0;
+        text-align: center;
+  }
 `;
 
 export default Button;
